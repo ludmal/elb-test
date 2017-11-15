@@ -1,12 +1,13 @@
-﻿@{
+﻿@using System.Configuration
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h1>eLogbook - PROD</h1>
+    <h1>eLogbook - @ConfigurationManager.AppSettings["Env"]</h1>
     Demo setup for the eLogbook app.
 </div>
 
 <div class="row">
-    Welcome to elogbook 
+    Welcome to elogbook - UAT Environement v.1.0
 </div>
